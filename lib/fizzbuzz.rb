@@ -1,4 +1,6 @@
 def fizzbuzz(num)
-  return 'fizz' if num % 3 == 0
-  return 'buzz' if num % 5 == 0
+  output = ''
+  output << 'fizz' if num % 3 == 0
+  output << 'buzz' if num % 5 == 0
+  output
 end

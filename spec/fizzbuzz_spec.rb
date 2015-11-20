@@ -18,4 +18,12 @@ describe 'fizzbuzz' do
     expect(fizzbuzz(rand(100)*5)).to eq 'buzz'
   end
 
+  it 'returns fizzbuzz when passed a multiple of 3 AND 5' do
+    expect(fizzbuzz(rand(100)*3*5)).to eq 'fizzbuzz'
+  end
+
+  it 'returns the original number of not divisable by 3 or 5' do
+    expect(fizzbuzz(17)).to eq 17
+  end
+
 end
